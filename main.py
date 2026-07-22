@@ -75,12 +75,12 @@ if choise == "1":
 
     moved = 0
     skipped = 0
-    start_time = time.perf_counter()
 
     if confirm == "y":
-        time.sleep(2)
+        start_time = time.perf_counter()
+        time.sleep(0.5)
         print("Process in " + file_dir + " started...")
-        time.sleep(2)
+        time.sleep(1)
         print("Ordering files...")
 
         folder_files = os.listdir(file_dir)
@@ -100,12 +100,11 @@ if choise == "1":
                 skipped += 1
 
         end_time = time.perf_counter()
-        time.sleep(2)
         print("=====================================")
         print("✔ Process finished successfully!")
         print("✔ Moved: " + str(moved) + " files")
         print("✔ Skipped: " + str(skipped) + " files")
-        print(f"✔ Time: {end_time - start_time:2f} seconds")
+        print(f"✔ Time: {end_time - start_time:.2f} seconds")
         print("=====================================")
         print("If there was any files didin't organized. that because it's not supported.") # because not all extensions available in the dictionary
     elif confirm == "n":
