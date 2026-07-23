@@ -59,7 +59,9 @@ extensions = {
     ".deb": "Packages",
     ".rpm": "Packages",
     ".apk": "Packages",
-    ".sh": "Scripts"
+    ".sh": "Scripts",
+    ".iso": "ISOs",
+    ".img": "IMGs"
 }
 
 file_dir = input("Please put the Folder's path: ")
@@ -68,10 +70,10 @@ choise = input("""-Select an option-
 1. Organize Folder
 2. Dry run(Preview)
 3. Exit
-Please insert the number of option you want:""")
+Please insert the number of option you want: """)
 
 if choise == "1":
-    confirm = input("Process in " + file_dir + " will be started. are you sure you want to continue? (y/n)").lower() # for confirm
+    confirm = input("Process in " + file_dir + " will be started. are you sure you want to continue? (y/n) ").lower()
 
     moved = 0
     skipped = 0
