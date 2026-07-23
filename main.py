@@ -15,7 +15,7 @@ print("\033[0m")
 
 
 extensions = {
-    ".py": "Python",
+    ".py": "Scripts",
     ".png": "Images",
     ".jpg": "Images",
     ".jpeg": "Images",
@@ -44,22 +44,22 @@ extensions = {
     ".gz": "Archives",
     ".xz": "Archives",
     ".tgz": "Archives",
-    ".cpp": "Codes",
-    ".c": "Codes",
-    ".java": "Codes",
-    ".js": "Codes",
-    ".html": "Codes",
-    ".css": "Codes",
-    ".php": "Codes",
-    ".json": "Codes",
-    ".xml": "Codes",
+    ".cpp": "Scripts",
+    ".c": "Scripts",
+    ".java": "Scripts",
+    ".js": "Scripts",
+    ".html": "Scripts",
+    ".css": "Scripts",
+    ".php": "Scripts",
+    ".json": "Scripts",
+    ".xml": "Scripts",
     ".exe": "Executables",
     ".AppImage": "Executables",
     ".x86_64": "Executables",
     ".deb": "Packages",
     ".rpm": "Packages",
     ".apk": "Packages",
-    ".sh": "Bash"
+    ".sh": "Scripts"
 }
 
 file_dir = input("Please put the Folder's path: ")
