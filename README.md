@@ -1,6 +1,8 @@
 <p align="center">
   <img src="filer.png" width="600">
 </p>
+![Python](https://img.shields.io/badge/python-3-blue)
+![License](https://img.shields.io/badge/license-GPLv3-blue)
 
 # 📁 Filer
 
