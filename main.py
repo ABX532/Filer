@@ -15,17 +15,17 @@ print("\033[0m")
 
 
 extensions = {
-    ".py": "Python",
+    ".py": "Scripts",
     ".png": "Images",
     ".jpg": "Images",
     ".jpeg": "Images",
     ".gif": "Images",
     ".webp": "Images",
     ".svg": "Images",
-    ".mp3": "Music",
-    ".wav": "Music",
-    ".flac": "Music",
-    ".ogg": "Music",
+    ".mp3": "Audio",
+    ".wav": "Audio",
+    ".flac": "Audio",
+    ".ogg": "Audio",
     ".mp4": "Videos",
     ".mkv": "Videos",
     ".avi": "Videos",
@@ -44,22 +44,24 @@ extensions = {
     ".gz": "Archives",
     ".xz": "Archives",
     ".tgz": "Archives",
-    ".cpp": "Codes",
-    ".c": "Codes",
-    ".java": "Codes",
-    ".js": "Codes",
-    ".html": "Codes",
-    ".css": "Codes",
-    ".php": "Codes",
-    ".json": "Codes",
-    ".xml": "Codes",
+    ".cpp": "Scripts",
+    ".c": "Scripts",
+    ".java": "Scripts",
+    ".js": "Scripts",
+    ".html": "Scripts",
+    ".css": "Scripts",
+    ".php": "Scripts",
+    ".json": "Scripts",
+    ".xml": "Scripts",
     ".exe": "Executables",
     ".AppImage": "Executables",
     ".x86_64": "Executables",
     ".deb": "Packages",
     ".rpm": "Packages",
     ".apk": "Packages",
-    ".sh": "Bash"
+    ".sh": "Scripts",
+    ".iso": "ISOs",
+    ".img": "IMGs"
 }
 
 file_dir = input("Please put the Folder's path: ")
@@ -68,10 +70,10 @@ choise = input("""-Select an option-
 1. Organize Folder
 2. Dry run(Preview)
 3. Exit
-Please insert the number of option you want:""")
+Please insert the number of option you want: """)
 
 if choise == "1":
-    confirm = input("Process in " + file_dir + " will be started. are you sure you want to continue? (y/n)").lower() # for confirm
+    confirm = input("Process in " + file_dir + " will be started. are you sure you want to continue? (y/n) ").lower()
 
     moved = 0
     skipped = 0
